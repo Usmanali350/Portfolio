@@ -30,7 +30,7 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="#Home"
-                // data-bs-toggle="collapse"
+                
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
               >
@@ -41,7 +41,6 @@ const Navbar = () => {
               <a
                 className="nav-link"
                 href="#Skills"
-                // data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
               >
@@ -51,19 +50,28 @@ const Navbar = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
+                href="#Services"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+              >
+                Services
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
                 href="#Projects"
-                data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
               >
                 Projects
               </a>
             </li>
+            
             <li className="nav-item">
               <a
                 className="nav-link"
                 href="#Contact"
-                data-bs-toggle="collapse"
                 data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
               >

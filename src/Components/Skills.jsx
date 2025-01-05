@@ -5,10 +5,10 @@ import "./Skills.css";
 
 export const Skills = () => {
   const technicalSkills = [
-    { skill: "MongoDB", percent: 90, icon: <Icon icon="skill-icons:mongodb" className="progress-icon bordered-icon" /> },
-    { skill: "Express.js", percent: 85, icon: <span className="express-icon p-2 rounded-circle bordered-icon">Ex</span> },
-    { skill: "React.js", percent: 95, icon: <Icon icon="logos:react" className="progress-icon bordered-icon" /> },
-    { skill: "Node.js", percent: 88, icon: <Icon icon="logos:nodejs-icon" className="progress-icon bordered-icon p-2" /> },
+    { skill: "MongoDB", percent: 70, icon: <Icon icon="skill-icons:mongodb" className="progress-icon bordered-icon" /> },
+    { skill: "Express.js", percent: 75, icon: <span className="express-icon p-2 rounded-circle bordered-icon">Ex</span> },
+    { skill: "React.js", percent: 85, icon: <Icon icon="logos:react" className="progress-icon bordered-icon" /> },
+    { skill: "Node.js", percent: 75, icon: <Icon icon="logos:nodejs-icon" className="progress-icon bordered-icon p-2" /> },
   ];
 
   const professionalSkills = [
@@ -19,9 +19,9 @@ export const Skills = () => {
   ];
 
   return (
-    <div className="container skills-container py-5" id="Skills">
+    <div className="container-lg container-fluid-sm skills-container  py-5" id="Skills">
       <div className="row">
-        <div className="col-lg-6 col-sm-12 mb-5">
+        <div className="col-lg-6 col-sm-12 mb-5 mt-5">
           <h2 className="text-center mb-4">Technical <span style={{ color: "aqua" }}>Skills</span></h2>
           {technicalSkills.map((item, index) => (
             <motion.div
@@ -46,7 +46,7 @@ export const Skills = () => {
           ))}
         </div>
         <div className="col-lg-6 col-sm-12 skill-ring-wrapper">
-          <h2 className="text-center w-100 mb-4">Professional <span style={{ color: "aqua" }}>Skills</span></h2>
+          <h2 className="text-center w-100 mb-4 mt-5">Professional <span style={{ color: "aqua" }}>Skills</span></h2>
           <div className="row">
             {professionalSkills.map((item, index) => (
               <motion.div

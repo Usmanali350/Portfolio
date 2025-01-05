@@ -1,0 +1,47 @@
+.services-container {
+    padding: 80px 20px;
+    background-color: var(--bg-light-black);
+  }
+  
+  .service-box {
+    border: 2px solid var(--aqua);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(103, 253, 246, 0.1);
+    background-color: var(--bg-dark-black);
+    color: var(--white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box h3 {
+    color: var(--aqua);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .service-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(103, 253, 246, 0.3);
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  
+  @media (max-width: 767px) {
+    .service-box {
+      text-align: center;
+    }
+  }
+  

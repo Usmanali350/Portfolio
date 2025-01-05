@@ -1,0 +1,56 @@
+.projects-container {
+    padding: 60px 0;
+}
+
+.project-box {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.project-box h3 {
+    color: #67fdf6;
+    font-size: 1.8rem;
+}
+
+.project-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.project-box .btn {
+    color: #67fdf6;
+    border-color: #67fdf6;
+}
+
+.project-box .btn:hover {
+    background-color: #67fdf6;
+    color: #1e1e1e;
+    box-shadow: 0 0 25px var(--aqua);
+}
+
+/* Fix for responsiveness */
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.project-box {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .project-box {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-box {
+        width: 95%;
+    }
+}
