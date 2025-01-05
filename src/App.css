@@ -1,0 +1,92 @@
+:root {
+  --bg-light-black: #1c1c1c;
+  --bg-dark-black: #121212;
+  --aqua: #67fdf6;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--bg-light-black);
+  color: var(--white);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.logo:hover {
+  text-shadow: 0px 0px 25px var(--aqua) !important;
+}
+
+.navbar {
+  background-color: var(--bg-dark-black);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  text-decoration: none;
+  padding-bottom: 5px;
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--aqua);
+  border-bottom: 3px solid var(--aqua);
+  padding-bottom: 5px;
+  text-shadow: 0px,0px,10px,var(--aqua);
+}
+
+.active-link {
+  color: var(--aqua) !important;
+  border-bottom: 3px solid var(--aqua);
+  padding-bottom: 5px;
+}
+body {
+  padding-top: 80px;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section h1 {
+  text-align: center;
+  color: var(--white);
+}
+.bordered-icon {
+  display: inline-block;
+  padding: 15px;
+  border: 3px solid var(--aqua);
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.section h2 {
+  color: var(--aqua);
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+  #Home, #Skills {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+}

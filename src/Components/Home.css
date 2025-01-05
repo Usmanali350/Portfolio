@@ -1,0 +1,88 @@
+:root {
+    --bg-light-black: #1c1c1c;
+    --bg-dark-black: #121212;
+    --aqua: #67fdf6;
+    --white: #ffffff;
+  }
+  
+  .home-container {
+    background-color: var(--bg-light-black);
+    /* padding: 50px; */
+    height: 100vh;
+    overflow: hidden;
+  }
+  .intro-text {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--white);
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--aqua);
+  }
+  
+  .dynamic-text {
+    color: var(--aqua);
+  }
+  
+  .description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--white);
+  }
+  .contact-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--aqua);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ 
+  .contact-button:hover {
+    background-color: var(--aqua);
+    color: var(--bg-dark-black);
+    box-shadow: 0px, 0px, 75px, var(--aqua);
+  }
+  
+  
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  .profile-image:hover{
+    box-shadow: 0px 0px 25px var(--aqua);
+  }
+  @media (max-width: 767px) {
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+  
+    .intro-text {
+      font-size: 1.5rem;
+    }
+  
+    .name {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  

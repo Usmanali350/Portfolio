@@ -1,0 +1,149 @@
+:root {
+    --bg-light-black: #1c1c1c;
+    --bg-dark-black: #121212;
+    --aqua: #67fdf6;
+    --white: #ffffff;
+  }
+  
+  .skills-container {
+    color: var(--white);
+  }
+  .bordered-icon {
+    border: 2px solid var(--aqua);
+    border-radius: 50%;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bordered-icon:hover {
+    transform: scale(1.1);
+    background-color: rgb(142, 238, 238);
+    color: var(--bg-dark-black);
+    box-shadow: 0 0 25px var(--aqua);
+}
+/* .ring-inner {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.ring-inner::after {
+    content: attr(data-percent);
+    color: var(--aqua);
+} */
+
+  
+  .express-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    
+    height: 40px;
+    font-weight: bold;
+    color: var(--aqua);
+  }
+  
+  .express-icon {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--bg-dark-black);
+    padding: 6px 14px;
+    border-radius: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  
+  .progress-container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column; /* Updated to column */
+    align-items: center; /* Center the content */
+    width: 100%;
+  }
+  
+  .progress {
+    height: 35px;
+    background-color: var(--bg-dark-black);
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .progress-bar {
+    background-color: var(--aqua);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    font-weight: bold;
+    transition: width 1.5s ease;
+  }
+  
+  .progress-icon {
+    font-size: 40px; /* Adjust the icon size for better visibility */
+    color: var(--white);
+    margin-bottom: 10px; /* Space between icon and progress bar */
+  }
+  
+  .progress-text {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  
+  .skill-ring-wrapper {
+    text-align: center;
+  }
+  
+  .skill-ring {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid var(--aqua);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .skill-ring::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: var(--bg-dark-black);
+    border-radius: 50%;
+  }
+  
+  .ring-inner {
+    position: absolute;
+    z-index: 1;
+    color: var(--aqua);
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .skill-text {
+    margin-top: 10px;
+    color: var(--white);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .progress-container {
+      flex-direction: column;
+      align-items: center; /* Updated to center */
+    }
+  
+    .progress-icon {
+      margin-bottom: 10px; /* Space between icon and progress bar */
+    }
+  }
+  
