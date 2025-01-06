@@ -27,23 +27,31 @@ const projectData = [
 
 const Projects = () => {
   return (
-    <div className="projects-container container-fluid-sm container" id="Projects">
-      <h2 className="text-center mb-5">My <span style={{color:'aqua'}}>Projects</span></h2>
+    <div className="projects-container container" id="Projects">
+      <h2 className="text-center mb-5">My <span style={{ color: 'var(--aqua)' }}>Projects</span></h2>
       <div className="row">
         {projectData.map((project, index) => (
           <motion.div 
             key={index} 
-            className="col-md-5 project-box ms-lg-4 me-lg-4"
+            className="col-lg-6 col-sm-12 mb-4"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: index * 0.2 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(103, 253, 246, 0.5)' }}
-            style={{ marginBottom: '40px', transition: 'transform 0.3s ease, box-shadow 0.3s ease', textAlign: 'center' }}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: '0 10px 30px rgba(103, 253, 246, 0.5)',
+              transition: { duration: 0.3 }
+            }}
+            style={{ textAlign: 'center', transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
           >
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <a href={project.link} className="btn btn-outline-info mt-3" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            <div className="project-box">
+              <div className="card-body">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <a href={project.link} className="btn btn-outline-info mt-3" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

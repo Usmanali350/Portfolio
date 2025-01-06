@@ -1,56 +1,82 @@
-.projects-container {
-    padding: 60px 0;
-}
-
-.project-box {
-    background-color: #1e1e1e;
-    border: 1px solid rgba(0, 255, 255, 0.5);
+:root {
+    --aqua: #67fdf6;
+    --bg-light-black: #1c1c1c;
+    --bg-dark-black: #121212;
+    --white: #ffffff;
+  }
+  
+  .projects-container {
+    padding: 60px 15px;
+  }
+  
+  .project-box {
+    background-color: var(--bg-dark-black); /* Black background */
+    border: 2px solid var(--aqua); /* Aqua border */
     border-radius: 10px;
     padding: 30px;
-    color: white;
+    color: var(--white); /* White text */
     margin-bottom: 30px;
-}
-
-.project-box h3 {
-    color: #67fdf6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-box h3 {
+    color: var(--aqua); /* Aqua title */
     font-size: 1.8rem;
-}
-
-.project-box p {
+    margin-bottom: 15px;
+  }
+  
+  .project-box p {
     font-size: 1rem;
     margin-bottom: 20px;
-}
-
-.project-box .btn {
-    color: #67fdf6;
-    border-color: #67fdf6;
-}
-
-.project-box .btn:hover {
-    background-color: #67fdf6;
-    color: #1e1e1e;
-    box-shadow: 0 0 25px var(--aqua);
-}
-
-/* Fix for responsiveness */
-.row {
+    color: #ccc;
+  }
+  
+  .project-box .btn {
+    color: var(--aqua); /* Aqua button text */
+    border-color: var(--aqua); /* Aqua border */
+  }
+  
+  .project-box .btn:hover {
+    background-color: var(--aqua);
+    color: var(--bg-dark-black); /* Black text on hover */
+    box-shadow: 0 0 25px var(--aqua); /* Aqua glow effect */
+  }
+  
+  .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
-}
-
-.project-box {
+  }
+  
+  .project-box {
     width: 100%;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 992px) {
     .project-box {
-        margin: 0 auto;
-        width: 90%;
+      margin: 0 auto;
+      width: 90%;
     }
-}
-
-@media (max-width: 576px) {
+  }
+  
+  @media (max-width: 768px) {
     .project-box {
-        width: 95%;
+      width: 90%;
     }
-}
+  }
+  
+  @media (max-width: 576px) {
+    .project-box {
+      width: 95%;
+    }
+  }
+  
+  .project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(103, 253, 246, 0.5);
+  }
+  
+  .project-box h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
